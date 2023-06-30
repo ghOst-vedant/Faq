@@ -7,7 +7,7 @@ quests.forEach((quest) => {
   const icon = quest.querySelector(".icon");
   const answer = quest.querySelector(".answer");
 
-  quest.addEventListener('click',() =>{
+  icon.addEventListener('click',() =>{
     if (icon.classList.contains('active')) {
         icon.classList.remove('active');
         answer.style.maxHeight=null;
